@@ -10,10 +10,10 @@ describe("LoudGreeter", () => {
 
     test("calling volume makes 3", () => {
         let loudGreeting: LoudGreeter = new LoudGreeter("Buenas Dias");
+        loudGreeting.addVolume();
+        loudGreeting.addVolume();
+        loudGreeting.addVolume();
         let result: string = loudGreeting.greet("Mandy");
-        loudGreeting.addVolume();
-        loudGreeting.addVolume();
-        loudGreeting.addVolume();
-        expect(result).toBe("Buenas Dias, Mandy!!!");
+        expect(result).toBe("Buenas Dias, Mandy!!!!!");
     });
 });
