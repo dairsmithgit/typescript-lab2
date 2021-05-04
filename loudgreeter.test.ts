@@ -12,6 +12,8 @@ describe("LoudGreeter", () => {
         let loudGreeting: LoudGreeter = new LoudGreeter("Buenas Dias");
         let result: string = loudGreeting.greet("Mandy");
         loudGreeting.addVolume();
+        loudGreeting.addVolume();
+        loudGreeting.addVolume();
         expect(result).toBe("Buenas Dias, Mandy!!!");
     });
 });
